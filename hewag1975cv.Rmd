@@ -1,0 +1,90 @@
+---
+name: Dr. Hendrik 
+surname: Wagenseil
+position: Senior Data Scientist
+date: "`r format(Sys.time(), '%B %Y')`"
+phone: +49 179 6638703
+email: hendrik.wagenseil@gmail.com
+github: hewag1975
+output: 
+  vitae::moderncv
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r, echo=FALSE, out.width="50%", fig.align="center"}
+knitr::include_graphics("pic/profile.jpg")
+```
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+library(data.table)
+```
+
+# Passion
+
+* My family 
+* (Spatial) data science with R, open source software 
+* Outdoor activities: Climbing, biking, running, (ski) mountaineering
+
+# Profession
+
+```{r}
+readxl::read_excel(
+  "aboutme.xlsx"
+  , sheet = "profession"
+) |> 
+  detailed_entries(
+    what = Position
+    , when = Year
+    , with = Company
+    , why = Responsibilities
+  )
+```
+
+# Education
+
+```{r}
+readxl::read_excel(
+  "aboutme.xlsx"
+  , sheet = "education"
+) |> 
+  detailed_entries(
+    what = Degree
+    , when = Year
+    , with = Institution
+    , why = Subject
+  )
+```
+
+# Skills
+
+
+# Toolset
+
+```{r, echo=FALSE, out.width="10%"}
+knitr::include_graphics(
+  c(
+    "pic/R.png"
+    , "pic/github.png"
+    , "pic/git.png"
+    , "pic/sql.png"
+    , "pic/aws.png"
+    , "pic/ubuntu.png"
+    , "pic/docker.png"
+    , "pic/shiny.png"
+    , "pic/rstudio.png"
+  )
+)
+```
+
+<!-- ![](pic/R.jpeg){width=20%, height=20%} ![](pic/git.png){width=20%, height=20%} ![](pic/github.png){width=20%, height=20%} -->
+<!-- ![](pic/sql.png)  -->
+
+# Volunteer work
+
+* Mountain instructor for the German Alpine Club (DAV)
+* Volunteer data science work for Bund Naturschutz
+
+
