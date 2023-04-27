@@ -6,6 +6,7 @@ date: "`r format(Sys.time(), '%B %Y')`"
 phone: +49 179 6638703
 email: hendrik.wagenseil@gmail.com
 github: hewag1975
+linkedin: dr-hendrik-wagenseil
 output: 
   vitae::moderncv
 editor_options: 
@@ -32,14 +33,14 @@ library(data.table)
 
 ```{r}
 readxl::read_excel(
-  "aboutme.xlsx"
+  "hewag1975cv.xlsx"
   , sheet = "profession"
 ) |> 
   detailed_entries(
-    what = Position
-    , when = Year
-    , with = Company
-    , why = Responsibilities
+    what = role
+    , when = year
+    , with = company
+    , why = responsibilities
   )
 ```
 
@@ -47,14 +48,14 @@ readxl::read_excel(
 
 ```{r}
 readxl::read_excel(
-  "aboutme.xlsx"
+  "hewag1975cv.xlsx"
   , sheet = "education"
 ) |> 
   detailed_entries(
-    what = Degree
-    , when = Year
-    , with = Institution
-    , why = Subject
+    what = degree
+    , when = year
+    , with = institution
+    , why = subject
   )
 ```
 
@@ -63,24 +64,33 @@ readxl::read_excel(
 
 # Toolset
 
-```{r, echo=FALSE, out.width="10%"}
+```{r, echo=FALSE}
 knitr::include_graphics(
   c(
-    "pic/R.png"
-    , "pic/github.png"
-    , "pic/git.png"
-    , "pic/sql.png"
-    , "pic/aws.png"
-    , "pic/ubuntu.png"
-    , "pic/docker.png"
+    "pic/rstudio.png"
+    , "pic/R.png"
     , "pic/shiny.png"
-    , "pic/rstudio.png"
+    , "pic/git.png"
+    , "pic/github.png"
   )
+  , dpi = 300
 )
 ```
 
-<!-- ![](pic/R.jpeg){width=20%, height=20%} ![](pic/git.png){width=20%, height=20%} ![](pic/github.png){width=20%, height=20%} -->
-<!-- ![](pic/sql.png)  -->
+&nbsp;
+&nbsp;
+
+```{r, echo=FALSE}
+knitr::include_graphics(
+  c(
+    "pic/ubuntu.png"
+    , "pic/docker.png"
+    , "pic/sql.png"
+    , "pic/aws.png"
+  )
+  , dpi = 300
+)
+```
 
 # Volunteer work
 
