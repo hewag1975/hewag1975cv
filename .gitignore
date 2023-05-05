@@ -4,5 +4,5 @@
 .Ruserdata
 
 # sty and cls
-*.sty
-*.cls
+# *.sty
+# *.cls
