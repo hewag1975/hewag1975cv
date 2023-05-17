@@ -13,10 +13,12 @@ urlcolor: blue
 linkcolor: blue
 editor_options: 
   chunk_output_type: console
+  markdown: 
+    wrap: 100
 ---
 
-```{r, echo=FALSE, out.width="25%", fig.align="center"}
-knitr::include_graphics("pic/profile.jpg")
+```{r, echo=FALSE, out.width="40%", fig.align="center"}
+knitr::include_graphics("pic/profile2.jpg")
 ```
 
 ```{r setup, include=FALSE}
@@ -27,42 +29,39 @@ library(data.table)
 
 ---
 
-&nbsp;
-
 # About me
 
 My name is Hendrik Wagenseil, I am 47 years old and live in the city of 
-Nuremberg (Bavaria) close to the Frankenjura. I love all kinds of outdoor 
-activities, whereas my absolute favorites are rock climbing, biking, running and 
-(ski) mountaineering. I also enjoy introducing my three kids Christoph, Johannes 
-and Annika to these activities and volunteer as a climbing and mountaineering 
-instructor for the German Alpine Club since 1996. Me, my wife and my kids enjoy 
-traveling and exploring new places as a family and have been to Sweden, Greece, 
-France and many other countries. This summer, Iceland is our destination.  
+Nuremberg. I love all kinds of outdoor activities, whereas my absolute favorites 
+are rock climbing, biking, running and (ski) mountaineering. I also enjoy 
+introducing my three kids Christoph, Johannes and Annika to these activities 
+and volunteer as a climbing and mountaineering instructor for the German Alpine 
+Club since 1996. Me, my wife and my kids enjoy traveling and exploring new 
+places as a family and have been to Sweden, Greece, France and many other 
+countries.\
 
-&nbsp;
+Professionally I am a passionate data scientist. Being geographer by education, 
+processing and creating insights from spatial data is my favorite research 
+activity. I also have developed machine learning models in various contexts 
+(predicting consumer behavior, modeling sales performance), worked with 
+physical models on plant growth and time series data and also created multiple 
+interactive applications to create insights from data for non-expert users.\
 
-Besides that, I am a passionate data scientist. Being geographer by education, 
-creating insights from spatial data is my favorite research activity. I have 
-been extensively working with R and all sorts of associated (spatial) packages 
-for data wrangling, data visualization and modeling / machine learning (e.g. 
-data.table, sf, stars, ggplot2, mapview, ranger, caret, etc.). I am keen on 
-exploring new methods and using them to generate understandable and actionable 
-insights from data. Since two years I have been exclusively working on Ubuntu and 
-meanwhile am a big fan of it.
-
-&nbsp;
+Language-wise have been extensively working with R and all sorts of associated 
+(spatial) packages for data wrangling, data visualization and modeling / 
+machine learning (e.g. data.table, sf, stars, ggplot2, mapview, ranger, caret, 
+shiny, etc.). I am keen on exploring new methods and using them to generate 
+understandable and actionable insights from data. Since two years I have been 
+exclusively working on Ubuntu and meanwhile am a big fan of it.\
 
 Like most Data Scientists I sometimes use my spare time for coding. The little 
-Shiny application "cdcexplorer" ([URL](https://hewag1975.shinyapps.io/cdcexplorer/)) is 
-an example that I invite you to visit (note that it is hosted on a free web 
-server and may take some time to launch). Code is freely available on my 
-GitHub repo.
+Shiny application "cdcexplorer" 
+([URL](https://hewag1975.shinyapps.io/cdcexplorer/)) is an example that I 
+invite you to visit (note that it takes a moment to launch it). Code is 
+available on my GitHub repo.\
 
-&nbsp;
-
-I am fluent in English, spreche Deutsch als Muttersprache y puedo hablar un 
-poco de Español. 
+I am fluent in English, spreche Deutsch als Muttersprache y puedo hablar un poco 
+de Español.
 
 # My career
 
@@ -108,7 +107,7 @@ readxl::read_excel(
   )
 ```
 
----
+----------------------------------------------------------------------------------------------------
 
 ```{r, echo=FALSE}
 knitr::include_graphics(
@@ -124,9 +123,6 @@ knitr::include_graphics(
   , dpi = 300
 )
 ```
-
-&nbsp;
-&nbsp;
 
 ```{r, echo=FALSE}
 knitr::include_graphics(
