@@ -31,7 +31,7 @@ library(data.table)
 
 # About me
 
-My name is Hendrik Wagenseil, I am 47 years old and live in the city of 
+My name is Hendrik Wagenseil, I am 48 years old and live in the city of 
 Nuremberg. I love all kinds of outdoor activities, whereas my absolute favorites 
 are rock climbing, biking, running and (ski) mountaineering. I also enjoy 
 introducing my three kids Christoph, Johannes and Annika to these activities 
