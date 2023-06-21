@@ -18,7 +18,7 @@ editor_options:
 ---
 
 ```{r, echo=FALSE, out.width="40%", fig.align="center"}
-knitr::include_graphics("pic/profile2.jpg")
+knitr::include_graphics("pic/profile2_low.jpg")
 ```
 
 ```{r setup, include=FALSE}
@@ -36,7 +36,7 @@ Nuremberg. I love all kinds of outdoor activities, whereas my absolute favorites
 are rock climbing, biking, running and (ski) mountaineering. I also enjoy 
 introducing my three kids Christoph, Johannes and Annika to these activities 
 and volunteer as a climbing and mountaineering instructor for the German Alpine 
-Club since 1996. Me, my wife and my kids enjoy traveling and exploring new 
+Club (DAV) since 1996. Me, my wife and my kids enjoy traveling and exploring new 
 places as a family and have been to Sweden, Greece, France and many other 
 countries.\
 
