@@ -32,12 +32,12 @@ library(data.table)
 # About me
 
 My name is Hendrik Wagenseil, I am 48 years old and live in the city of 
-Nuremberg. I love all kinds of outdoor activities, whereas my absolute favorites 
-are rock climbing, biking, running and (ski) mountaineering. I also enjoy 
-introducing my three kids Christoph, Johannes and Annika to these activities 
-and volunteer as a climbing and mountaineering instructor for the German Alpine 
-Club (DAV) since 1996. Me, my wife and my kids enjoy traveling and exploring new 
-places as a family and have been to Sweden, Greece, France and many other 
+Nuremberg. Privately, I love all kinds of outdoor activities, whereas my 
+absolute favorites are rock climbing, biking, running and (ski) mountaineering. 
+I also enjoy introducing my three kids Christoph, Johannes and Annika to these 
+activities and volunteer as a climbing and mountaineering instructor for the 
+German Alpine Club (DAV). Me, my wife and my kids enjoy traveling and exploring 
+new places as a family and have been to Sweden, Greece, France and many other 
 countries.\
 
 Professionally I am a passionate data scientist. Being geographer by education, 
@@ -50,9 +50,11 @@ interactive applications to create insights from data for non-expert users.\
 Language-wise have been extensively working with R and all sorts of associated 
 (spatial) packages for data wrangling, data visualization and modeling / 
 machine learning (e.g. data.table, sf, stars, ggplot2, mapview, ranger, caret, 
-shiny, etc.). I am keen on exploring new methods and using them to generate 
-understandable and actionable insights from data. Since two years I have been 
-exclusively working on Ubuntu and meanwhile am a big fan of it.\
+shiny, etc.). In the past I also worked a lot with SQL and SAS and just recently 
+started my journey in Python. In general I am keen on exploring new methods and 
+using them to generate understandable and actionable insights from data. Since 
+two years I have been exclusively working on Ubuntu and meanwhile am a big fan 
+of it.\
 
 Like most Data Scientists I sometimes use my spare time for coding. The little 
 Shiny application "cdcexplorer" 
