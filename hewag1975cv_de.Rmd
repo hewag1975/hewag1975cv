@@ -1,0 +1,120 @@
+---
+name: Dr. Hendrik 
+surname: Wagenseil
+position: Senior Data Scientist
+address: "Hendrik Wagenseil, Hofreuthackerstr. 6, 90482 Nürnberg"
+phone: +49 179 6638703
+email: hendrik.wagenseil@gmail.com
+github: hewag1975
+linkedin: hewag1975
+output: 
+  vitae::moderncv
+urlcolor: blue
+linkcolor: blue
+editor_options: 
+  chunk_output_type: console
+  markdown: 
+    wrap: 100
+---
+
+```{r, echo=FALSE, out.width="40%", fig.align="center"}
+knitr::include_graphics("pic/profile2_low.jpg")
+```
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+library(data.table)
+```
+
+---
+
+
+# Berufserfahrung
+
+```{r}
+readxl::read_excel(
+  "hewag1975cv_de.xlsx"
+  , sheet = "profession"
+) |> 
+  detailed_entries(
+    what = role
+    , when = year
+    , with = company
+    , why = responsibilities
+  )
+```
+
+# Ausbildung
+
+```{r}
+readxl::read_excel(
+  "hewag1975cv_de.xlsx"
+  , sheet = "education"
+) |> 
+  detailed_entries(
+    what = degree
+    , when = year
+    , with = institution
+    , why = subject
+  )
+```
+
+# Kenntnisse
+
+```{r}
+readxl::read_excel(
+  "hewag1975cv_de.xlsx"
+  , sheet = "skills"
+) |> 
+  detailed_entries(
+    what = tool
+    , when = year
+    , why = expertise
+  )
+```
+
+---
+
+```{r, echo=FALSE}
+knitr::include_graphics(
+  c(
+    "pic/rstudio.png"
+    , "pic/R.png"
+    , "pic/shiny.png"
+    , "pic/quarto.png"
+    , "pic/git.png"
+    , "pic/github.png"
+    , "pic/gitlab.png"
+  )
+  , dpi = 300
+)
+```
+
+```{r, echo=FALSE}
+knitr::include_graphics(
+  c(
+    "pic/ubuntu.png"
+    , "pic/docker.png"
+    , "pic/sql.png"
+    , "pic/aws.png"
+    , "pic/python.png"
+  )
+  , dpi = 300
+)
+```
+
+---
+
+# Über mich
+
+Daten und deren Analyse spielen in meinem Leben eine große Rolle. Darüber hinaus 
+habe ich aber auch noch andere Leidenschaften. Allen voran natürlich meine Familie 
+mit meiner Frau und meinen drei Kindern. Zusammen erkunden wir gerne die nähere 
+und weitere Umgebung und reisen gerne, v.a. auch zu (geographisch) spannenden 
+Orten, wie z.B. in diesem Jahr nach Island. Außerdem bin ich begeisterter 
+Kletterer und Bergsteiger und in diesem Bereich auch ehrenamtlich als Trainer 
+und Ausbildungsreferent im Deutschen Alpenverein tätig.\
+
+Neben Deutsch als Muttersprache spreche ich fließend Englisch und habe 
+Grundkenntnisse in Spanisch.

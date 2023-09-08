@@ -69,7 +69,7 @@ de Español.
 
 ```{r}
 readxl::read_excel(
-  "hewag1975cv.xlsx"
+  "hewag1975cv_en.xlsx"
   , sheet = "profession"
 ) |> 
   detailed_entries(
@@ -84,7 +84,7 @@ readxl::read_excel(
 
 ```{r}
 readxl::read_excel(
-  "hewag1975cv.xlsx"
+  "hewag1975cv_en.xlsx"
   , sheet = "education"
 ) |> 
   detailed_entries(
@@ -99,7 +99,7 @@ readxl::read_excel(
 
 ```{r}
 readxl::read_excel(
-  "hewag1975cv.xlsx"
+  "hewag1975cv_en.xlsx"
   , sheet = "skills"
 ) |> 
   detailed_entries(
