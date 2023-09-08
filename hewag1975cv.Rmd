@@ -2,7 +2,7 @@
 name: Dr. Hendrik 
 surname: Wagenseil
 position: Senior Data Scientist
-date: "`r format(Sys.time(), '%B %Y')`"
+address: "Hendrik Wagenseil, Hofreuthackerstr. 6, 90482 Nürnberg"
 phone: +49 179 6638703
 email: hendrik.wagenseil@gmail.com
 github: hewag1975
