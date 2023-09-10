@@ -67,6 +67,7 @@ readxl::read_excel(
   "hewag1975cv_de.xlsx"
   , sheet = "skills"
 ) |> 
+  # subset(!id %in% c(5, 6)) |> # MNET
   detailed_entries(
     what = tool
     , when = year
