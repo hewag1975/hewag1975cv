@@ -24,6 +24,7 @@ knitr::include_graphics("pic/profile2_low.jpg")
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
 library(vitae)
+library(scholar)
 library(data.table)
 ```
 
@@ -67,7 +68,6 @@ readxl::read_excel(
   "hewag1975cv_de.xlsx"
   , sheet = "skills"
 ) |> 
-  # subset(!id %in% c(5, 6)) |> # MNET
   detailed_entries(
     what = tool
     , when = year
@@ -109,10 +109,30 @@ knitr::include_graphics(
 
 # Über mich
 
-Daten und deren Analyse spielen in meinem Leben eine große Rolle. Darüber hinaus 
-habe ich aber auch noch andere Leidenschaften. Allen voran natürlich meine Familie 
-mit meiner Frau und meinen drei Kindern. Zusammen erkunden wir gerne die nähere 
-und weitere Umgebung und reisen gerne, v.a. auch zu (geographisch) spannenden 
-Orten, wie z.B. in diesem Jahr nach Island. Außerdem bin ich begeisterter 
-Kletterer und Bergsteiger und in diesem Bereich auch ehrenamtlich als Trainer 
-und Ausbildungsreferent im Deutschen Alpenverein tätig.
+Programmieren, Daten und Datenanalyse spielen in meinem Leben eine große Rolle - 
+beruflich und auch in kleineren privaten Projekten. Darüber hinaus habe ich aber 
+auch noch andere Leidenschaften. Mit meiner Familie erkunde ich gerne (und oft 
+mit der Bahn ;-)) die nähere und weitere Umgebung und wir reisen gerne zu 
+(geographisch) spannenden Orten, wie z.B. in diesem Jahr nach Island. 
+Außerdem bin ich begeisterter Kletterer und Bergsteiger und in diesem Bereich auch ehrenamtlich 
+als Trainer und Ausbildungsreferent im Deutschen Alpenverein tätig.
+
+---
+
+# Publikationen
+
+```{r}
+pub = get_publications("W9QpphMAAAAJ") |> 
+  as.data.table()
+pub = pub[year > 2005]
+pub = pub[order(year, decreasing = TRUE)]
+
+detailed_entries(
+    pub
+    , what = title
+    , when = year
+    , with = author
+    , where = journal
+  )
+```
+
