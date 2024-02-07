@@ -30,7 +30,6 @@ library(data.table)
 
 ---
 
-
 # Berufserfahrung
 
 ```{r}
@@ -77,7 +76,7 @@ readxl::read_excel(
 
 ---
 
-```{r, echo=FALSE}
+```{r, echo=FALSE, include=FALSE, eval=FALSE}
 knitr::include_graphics(
   c(
     "pic/rstudio.png"
@@ -92,7 +91,7 @@ knitr::include_graphics(
 )
 ```
 
-```{r, echo=FALSE}
+```{r, echo=FALSE, include=FALSE, eval=FALSE}
 knitr::include_graphics(
   c(
     "pic/ubuntu.png"
@@ -105,16 +104,16 @@ knitr::include_graphics(
 )
 ```
 
----
+<!-- --- -->
 
 # Über mich
 
-Programmieren, Daten und Datenanalyse spielen in meinem Leben eine große Rolle - 
-beruflich und auch in kleineren privaten Projekten. Darüber hinaus habe ich aber 
-auch noch andere Leidenschaften. Mit meiner Familie erkunde ich gerne (und oft 
-mit der Bahn ;-)) die nähere und weitere Umgebung und wir reisen gerne zu 
-(geographisch) spannenden Orten, wie z.B. in diesem Jahr nach Island. 
-Außerdem bin ich begeisterter Kletterer und Bergsteiger und in diesem Bereich auch ehrenamtlich 
+(Geo-)Daten, Datenanalyse und Programmieren spielen in meinem Leben eine große 
+Rolle - beruflich und auch in kleineren privaten Projekten. Darüber hinaus habe 
+ich aber auch noch andere Leidenschaften. Mit meiner Familie erkunde ich gerne 
+die nähere und weitere Umgebung und wir reisen gerne zu (geographisch) 
+spannenden Orten, wie z.B. nach Schweden oder Island. Außerdem bin ich 
+begeisterter Kletterer und Bergsteiger und in diesem Bereich auch ehrenamtlich 
 als Trainer und Ausbildungsreferent im Deutschen Alpenverein tätig.
 
 ---
@@ -124,7 +123,8 @@ als Trainer und Ausbildungsreferent im Deutschen Alpenverein tätig.
 ```{r}
 pub = get_publications("W9QpphMAAAAJ") |> 
   as.data.table()
-pub = pub[year > 2005]
+# pub = pub[year > 2005]
+pub = pub[!is.na(year)]
 pub = pub[order(year, decreasing = TRUE)]
 
 detailed_entries(
